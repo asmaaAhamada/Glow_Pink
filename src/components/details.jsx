@@ -8,6 +8,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';import Typography from '@mui/material/Typography';
 import r1 from "../assets/imageProducts/r1.jpg"
 import DoneAllIcon from '@mui/icons-material/DoneAll';
+import NavPage from './navPar';
 const listItems = [
   {
     id: 1,
@@ -31,6 +32,7 @@ export default function DetailsPage(){
 
     return(
         <>
+        <NavPage/>
             <Box
       sx={{
         backgroundColor: theme.palette.background.default, // يتغير حسب الوضع

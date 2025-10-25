@@ -10,13 +10,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import { useTheme } from '@mui/material/styles';
+import NavPage from '../navPar';
 
 export default function PageLogin(){
     const theme = useTheme();
   
 return(
     <>
-    
+    <NavPage/>
       <Container  sx={{ height: '100vh', // يملىء كامل الشاشة
           display: 'flex',
           justifyContent: 'center',

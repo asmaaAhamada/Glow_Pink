@@ -7,11 +7,12 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
-import Button from '@mui/material/Button';export default function PageRegester(){
+import Button from '@mui/material/Button';import NavPage from '../navPar';
+export default function PageRegester(){
   const theme = useTheme();
 return(
     <>
-     
+     <NavPage/>
       <Container sx={{ height: '100vh', // يملىء كامل الشاشة
           display: 'flex',
           justifyContent: 'center',
