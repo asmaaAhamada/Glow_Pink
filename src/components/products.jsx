@@ -14,6 +14,7 @@ import {
   Button,
   useTheme,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 
 
@@ -98,14 +99,14 @@ export default function ProductsPage(){
               </Typography>
             </CardContent>
             <CardActions>
-                {/* <Link href="/details" style={{ width: '100%', display: 'block' }}> */}
+                <Link to="/details" style={{ width: '100%', display: 'block' }}>
               <Button
 fullWidth            
   variant="contained"
                 color="primary"
               >
 Show details              </Button>
-{/* </Link> */}
+</Link>
             </CardActions>
           </Card>
         </Grid>

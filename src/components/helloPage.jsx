@@ -2,6 +2,7 @@
 import React from "react";
 import { Box, Typography, Button, useTheme } from "@mui/material";
 import r1 from "../assets/imageProducts/r1.jpg"
+import { Link } from "react-router-dom";
 export default function HelloPage() {
   const theme = useTheme();
 
@@ -49,21 +50,25 @@ export default function HelloPage() {
           A unique shopping experience created by Asma and Ola to bring you the
           latest technology at the best prices.
         </Typography>
+          
 
-        <Button
-          variant="contained"
-          color="primary"
-          size="large"
-          sx={{
-            borderRadius: 2,
-            textTransform: "none",
-            px: 4,
-            py: 1.2,
-          }}
-          onClick={() => (window.location.href = "/register")}
-        >
-          Get Started
-        </Button>
+       <Link to="/regester" style={{ textDecoration: "none" }}>
+  <Button
+    variant="contained"
+    color="primary"
+    size="large"
+    sx={{
+      borderRadius: 2,
+      textTransform: "none",
+      px: 4,
+      py: 1.2,
+    }}
+  >
+    Get Started
+  </Button>
+</Link>
+
+       
       </Box>
 
       {/* الصورة */}

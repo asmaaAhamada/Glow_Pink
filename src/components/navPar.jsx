@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Box, Button, IconButton, useTheme } from "
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { useThemeContext } from "../desighn/ThemeContext";
+import { Link } from "react-router-dom";
 
 export default function NavPage() {
   const theme = useTheme();
@@ -20,6 +21,8 @@ bgcolor: theme.palette.background.paper, boxShadow: `1px 1px 1px ${theme.palette
           <Typography variant="h6" sx={{ color: theme.palette.text.primary, flexGrow: 1 }}>
             GlowPink
           </Typography>
+                     <Link to="/home"  style={{ textDecoration: 'none' }}>
+
 
           <Typography className="media" variant="h6" sx={{ color: theme.palette.text.primary, flexGrow: 1 ,mr:2
 
@@ -28,21 +31,22 @@ bgcolor: theme.palette.background.paper, boxShadow: `1px 1px 1px ${theme.palette
           }}>
             Home
           </Typography>
-
+</Link>
          
           <div style={{ justifyContent: "space-between", gap: "15px", display: "flex", alignItems: "center" }}>
             {/* ===============sighn_up====================== */}
-           
+           <Link to="/regester">
               <Button sx={{ border: `2px solid ${theme.palette.primary.main}`, borderRadius: "5px", color: theme.palette.text.primary }}>
                 Regester
               </Button>
-           
+           </Link>
 
-           
+                      <Link to="/login">
+
               <Button sx={{ backgroundColor: theme.palette.background.paper, borderRadius: "5px", color: theme.palette.primary.main }}>
                 Login
               </Button>
-           
+           </Link>
                         {/* ===============///sighn_up/////====================== */}
 
             {/* زر تغيير الوضع */}
