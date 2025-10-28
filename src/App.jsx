@@ -7,7 +7,7 @@ import PageLogin from './components/auth/login';
 import DetailsPage from './components/details';
 import DashboardPage from './components/adminPage/dasbord/dashboard';
 import OrdersPage from './components/adminPage/orders';
-import CatigoreisPage from './components/adminPage/catigerais';
+import CatigoreisPage from './components/adminPage/catigerais/catigerais';
 import SettingPage from './components/adminPage/setting';
 import DashboardLayout from './components/adminPage/DashboardLayout';
 

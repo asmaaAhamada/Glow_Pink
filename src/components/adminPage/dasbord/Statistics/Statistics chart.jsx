@@ -20,14 +20,14 @@ const SalesBarChart = () => {
     <VictoryChart
       theme={VictoryTheme.material}
       domainPadding={2}
-       height={250}  // مسافة بين الأعمدة
+       height={230}  // مسافة بين الأعمدة
     >
       {/* محور X */}
       <VictoryAxis
         tickValues={data.map(d => d.day)}
         tickFormat={data.map(d => d.day)}
         style={{
-          tickLabels: { fill: theme.palette.text.primary, fontSize: 12 },
+          tickLabels: { fill: theme.palette.text.primary, fontSize: 8 },
           axis: { stroke: theme.palette.divider },
         }}
       />
@@ -38,7 +38,7 @@ const SalesBarChart = () => {
         tickFormat={(x) => `$${x}`} 
         // صيغة المبيعات
         style={{
-          tickLabels: { fill: theme.palette.text.primary, fontSize: 12 },
+          tickLabels: { fill: theme.palette.text.primary, fontSize: 8 },
           grid: { stroke: theme.palette.divider, strokeDasharray: "3,3" },
         }}
       />
@@ -48,7 +48,7 @@ const SalesBarChart = () => {
         data={data}
         x="day"
         y="sales"
- style={{ data: { fill: barColor, borderRadius: 24 } }}
+ style={{ data: { fill: barColor, borderRadius: '24px' } }}
         barWidth={10}      />
     </VictoryChart>
   );

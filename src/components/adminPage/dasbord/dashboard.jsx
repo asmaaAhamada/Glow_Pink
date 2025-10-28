@@ -1,35 +1,25 @@
-import {  Grid,
-  Card,
-  Box,
-  CardContent,
-  Typography,
-  CardActions,
-  Button, useTheme, 
+import { useTheme, 
   Stack} from '@mui/material';
-import TextField from '@mui/material/TextField';
-import Avatar from '@mui/material/Avatar';
+
 import CardsPage from './Statistics/4cards';
 import SalesBarChart from './Statistics/Statistics chart';
+import Head_Of_Page from '../hedearPage/headOfPage';
+import Search_Avatar from '../hedearPage/search&Avatar';
 
 
 export default function DashboardPage(){
      const theme = useTheme();
     return(
         <>
-       <Box sx={{display:'flex' ,justifyContent:'space-between',alignItems:'center'}}>
-             <TextField  sx={{width:'80%'}} id="outlined-basic" label="search" variant="outlined" />
-                   <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+        {/* //========البحث والملف الشخصي========== */}
+    <Search_Avatar/>
+               {/* //========//////البحث والملف الشخصي///////////////========= */}
 
-</Box>
-        <Typography sx={{mt:2}}>Dashboard review</Typography>
-        <p       
- style={{marginTop:'-3px',color:theme.palette.primary.main}}>Here, everything that happened this week will be reviewed.</p>
-
-
-
+<Head_Of_Page title="Dashboard review" sub_title="Here, everything that happened this week will be reviewed.
+ " />
 
         {/* //=====================show cards===================== */}
-       <Stack direction="column" spacing={2}>
+       <Stack direction="column" spacing={-6}>
       <CardsPage />
       <SalesBarChart />
     </Stack>
