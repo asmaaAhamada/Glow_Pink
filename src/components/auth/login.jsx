@@ -58,7 +58,7 @@ return(
       label="enter a password"
     />
   </Box> 
-      <Button        sx={{ width: '100%', borderRadius: '3%' }}
+      <Button        sx={{ width: '100%', borderRadius: '5px' }}
  variant="contained">Log in Now</Button>
  
     <Typography sx={{color: theme.palette.primary.main, mb: 1, fontWeight: 'bold' }}>creat a new acount?</Typography>

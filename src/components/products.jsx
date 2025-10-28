@@ -50,7 +50,7 @@ const products = [
 ];
 
 
-export default function ProductsPage(){
+export default function Products_Page(){
       const theme = useTheme();
     
     return(

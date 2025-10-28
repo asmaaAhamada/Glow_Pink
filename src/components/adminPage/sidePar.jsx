@@ -20,6 +20,9 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CategoryIcon from '@mui/icons-material/Category';
 import SettingsIcon from '@mui/icons-material/Settings';
+import StoreIcon from '@mui/icons-material/Store';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt'; 
+
 
 import { useTheme } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
@@ -30,14 +33,17 @@ const drawerWidth = 240;
 
 function SidPar(props) {
 
-const pages = ['Dashboard', 'Orders', 'Categories', 'Settings'];
+const pages = ['Dashboard', 'Products','Orders', 'Categories','Users'];
 
 
 const iconsMap = {
   Dashboard: <DashboardIcon />,
+  Products :<StoreIcon/>,
+    Users :<PeopleAltIcon/>,
+
   Orders: <ShoppingCartIcon />,
   Categories: <CategoryIcon />,
-  Settings: <SettingsIcon />,
+  
 };
 
 const location = useLocation();

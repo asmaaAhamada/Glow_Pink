@@ -68,7 +68,7 @@ return(
       label="Creat a password"
     />
   </Box> 
-      <Button        sx={{ width: '100%', borderRadius: '3%' }}
+      <Button        sx={{ width: '100%', borderRadius: '5px' }}
  variant="contained">creat Account Now</Button>
 
     </Card>

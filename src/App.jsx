@@ -6,10 +6,11 @@ import PageRegester from './components/auth/regster';
 import PageLogin from './components/auth/login';
 import DetailsPage from './components/details';
 import DashboardPage from './components/adminPage/dasbord/dashboard';
-import OrdersPage from './components/adminPage/orders';
+import OrdersPage from './components/adminPage/oreder/orders';
 import CatigoreisPage from './components/adminPage/catigerais/catigerais';
-import SettingPage from './components/adminPage/setting';
 import DashboardLayout from './components/adminPage/DashboardLayout';
+import ProductsPage from './components/adminPage/products/ProductsPage';
+import UserPage from './components/adminPage/Users/UserPage';
 
 
 export default function App(){
@@ -27,9 +28,11 @@ export default function App(){
                     <Route path="/" element={<DashboardLayout />}>
           <Route index element={<DashboardPage />} />
           <Route path="dashboard" element={<DashboardPage />} />
+                    <Route path="Products" element={<ProductsPage />} />
           <Route path="orders" element={<OrdersPage />} />
           <Route path="categories" element={<CatigoreisPage />} />
-          <Route path="settings" element={<SettingPage />} />
+                              <Route path="Users" element={<UserPage />} />
+
         </Route>
 
    {/* ==================adminRouting======================= */}
